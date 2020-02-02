@@ -13,9 +13,7 @@ public interface IConsultaExamenRepo extends JpaRepository<ConsultaExamen, Integ
 	
 	//@Transactional
 	@Modifying
-	@Query(value = "INSERT INTO consulta_examen(id_consulta, id_examen) VALUES (:idConsulta, :idExamen)", nativeQuery = true)
+	@Query(value = "INSERT INTO consulta_examen(id_consulta, id_examen) VALUES (:idConsulta, :idExamen)", 
+	nativeQuery = true)
 	Integer registrar(@Param("idConsulta") Integer idConsulta, @Param("idExamen") Integer idExamen);
-
-	@Query("from ConsultaExamen ce where ce.consulta.idConsulta = :idConsulta")
-	List<ConsultaExamen> listarExamenesPorConsulta(@Param("idConsulta") Integer idconsulta);
 }

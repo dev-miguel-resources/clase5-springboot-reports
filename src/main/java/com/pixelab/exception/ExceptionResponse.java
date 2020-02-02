@@ -2,7 +2,8 @@ package com.pixelab.exception;
 
 import java.time.LocalDateTime;
 
-public class ExceptionResponse {
+public class ExceptionResponse { //interceptor de cuando se produzca un error de excepcion 
+	//siempre se detallen estas propiedades en la respuesta
 
 	private LocalDateTime timestamp;
 	private String mensaje;

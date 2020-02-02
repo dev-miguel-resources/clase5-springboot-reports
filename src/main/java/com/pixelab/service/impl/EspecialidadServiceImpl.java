@@ -13,7 +13,7 @@ import com.pixelab.service.IEspecialidadService;
 @Service
 public class EspecialidadServiceImpl implements IEspecialidadService{
 
-	@Autowired	
+  @Autowired	
 	private IEspecialidadRepo repo;
 	
 	@Override

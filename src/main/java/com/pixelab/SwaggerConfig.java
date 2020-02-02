@@ -15,10 +15,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-
+		//para ver despues la doc, luego de levantada la app: http://localhost:8080/swagger-ui.html
 	public static final Contact DEFAULT_CONTACT = new Contact("Pixelab Media", "https://www.google.com",
 			"ingenieromiguelch@gmail.com");
-	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Mediapp Api Documentation", "Mediapp Api Documentation", "1.0",
+	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo("Mediapp Api Documentation", 
+			"Mediapp Api Documentation", "1.0",
 			"PREMIUM", DEFAULT_CONTACT, "Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0",
 			new ArrayList<VendorExtension>());
 	

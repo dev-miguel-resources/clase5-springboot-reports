@@ -8,15 +8,5 @@ import com.pixelab.dto.FiltroConsultaDTO;
 import com.pixelab.model.Consulta;
 
 public interface IConsultaService extends ICRUD<Consulta>{
-
-	Consulta registrarTransaccional(ConsultaListaExamenDTO dto);
-	
-	List<Consulta> buscar(FiltroConsultaDTO filtro);
-
-	List<Consulta> buscarFecha(FiltroConsultaDTO filtro);
-	
-	List<ConsultaResumenDTO> listarResumen();
-	
-	byte[] generarReporte();
 		
 }

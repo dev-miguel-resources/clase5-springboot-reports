@@ -11,12 +11,5 @@ import com.pixelab.service.IConsultaExamenService;
 
 @Service
 public class ConsultaExamenServiceImpl implements IConsultaExamenService{
-
-	@Autowired
-	private IConsultaExamenRepo repo;
 	
-	@Override
-	public List<ConsultaExamen> listarExamenesPorConsulta(Integer idconsulta) {
-		return repo.listarExamenesPorConsulta(idconsulta);
-	}
 }
